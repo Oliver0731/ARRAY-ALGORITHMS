@@ -90,4 +90,11 @@ function myMax(array) {
 }
 
 console.log(myMax(nums));
-function swap() {}
+function swap(array, index1, index2) {
+  let swap1 = array[index1];
+  array[index1] = array[index2];
+  array[index2] = swap1;
+  return array;
+}
+console.log(swap(nums, 1, 2));
+console.log(swap(nums, 0, 15));
